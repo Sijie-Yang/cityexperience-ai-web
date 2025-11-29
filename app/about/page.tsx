@@ -35,7 +35,7 @@ export default function About() {
                 locked in academic papers and specialized tools that required significant expertise to use.
               </p>
               <p>
-                CityExperience.AI is our answer: we're building the infrastructure to bridge academic 
+                CityExperience.AI is our answer: we&apos;re building the infrastructure to bridge academic 
                 research and applied AI, making sophisticated urban intelligence accessible to planners, 
                 researchers, policymakers, and citizens worldwide.
               </p>
@@ -59,7 +59,7 @@ export default function About() {
                 and experience urban environments.
               </p>
               <p className="text-gray-700 leading-relaxed mt-4">
-                This background informs CityExperience.AI's approach: combining rigorous research methods 
+                This background informs CityExperience.AI&apos;s approach: combining rigorous research methods 
                 with practical AI infrastructure to solve real urban challenges.
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function About() {
             </h2>
             <div className="bg-primary-50 rounded-lg p-8 border border-primary-200">
               <p className="text-xl text-gray-900 font-medium leading-relaxed">
-                "Building an Urban Intelligence Operating System for cities worldwide."
+                &quot;Building an Urban Intelligence Operating System for cities worldwide.&quot;
               </p>
               <p className="text-gray-700 mt-4 leading-relaxed">
                 We envision CityExperience.AI as the foundational infrastructure that enables anyone—from 
