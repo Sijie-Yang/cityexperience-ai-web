@@ -64,6 +64,13 @@ const posts: Record<string, BlogPost> = {
   },
 };
 
+// Generate static params for all blog posts
+export function generateStaticParams() {
+  return Object.keys(posts).map((slug) => ({
+    slug: slug,
+  }));
+}
+
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
   return date.toLocaleDateString('en-US', {
