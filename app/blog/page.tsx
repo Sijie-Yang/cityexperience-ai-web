@@ -1,33 +1,6 @@
 import Link from 'next/link';
 import Section from '@/components/Section';
-
-interface BlogPost {
-  slug: string;
-  title: string;
-  date: string;
-  summary: string;
-}
-
-const posts: BlogPost[] = [
-  {
-    slug: 'launching-cityexperience-ai',
-    title: 'Launching CityExperience.AI',
-    date: '2025-01-15',
-    summary: 'Introducing CityExperience.AI - our vision for democratizing urban intelligence through AI. Learn about our mission to make cities more understandable, accessible, and equitable.',
-  },
-  {
-    slug: 'what-is-urbanrag',
-    title: 'What is UrbanRAG?',
-    date: '2025-01-10',
-    summary: 'Exploring the concept of Geospatial RAG (Retrieval-Augmented Generation) and how UrbanRAG enables intelligent reasoning over urban spatial data. A deep dive into our core technology.',
-  },
-  {
-    slug: 'from-research-to-infrastructure',
-    title: 'From Urban Comfort Research to Urban AI Infrastructure',
-    date: '2025-01-05',
-    summary: 'The journey from academic research on urban comfort, spatial vulnerability, and GeoAI to building applied AI infrastructure for cities worldwide.',
-  },
-];
+import { getAllPosts } from '@/data/blog';
 
 function formatDate(dateString: string): string {
   const date = new Date(dateString);
@@ -39,6 +12,8 @@ function formatDate(dateString: string): string {
 }
 
 export default function Blog() {
+  const posts = getAllPosts();
+
   return (
     <div className="min-h-screen bg-white">
       <Section className="bg-gradient-to-b from-gray-50 to-white">
